@@ -61,9 +61,11 @@ different flags which change the build.
 
 The two flags can be combined if needed `webpack --mode=production --watch`.
 
+`npx webpack`
+
 ### Developing with Firefox
 
-You can load the addone when working on it via [about:debugging](about:debugging) (more info on
+You can load the addon when working on it via [about:debugging](about:debugging) (more info on
 [mozilla.org](https://firefox-source-docs.mozilla.org/devtools-user/about_colon_debugging/index.html#extensions) and load the built extension file from `zip/firefox.zip`.
 
 ## Credits

@@ -4,7 +4,7 @@
  * under any licence.                                                                   *
  * Any usage of this code outside this project is not allowed.                          *
  ****************************************************************************************/
-import * from 'webextension-polyfill';
+import 'webextension-polyfill';
 import { Alert } from './components/Alert';
 import { AlertMessage, DownloadProgress } from './models/extension';
 import { isDownloadProgress } from './models/typeguards';
@@ -39,7 +39,8 @@ export class ForegroundMessageHandler {
             await Alert.add(this.progressElement, null);
         }
 
-        const text = `${download.type === 'download' ? 'Downloading' : 'Compression'} progress at ${download.percent}%`;
+        const text = `${download.type === 'download' ? 'Downloading' : 'Compression'} progress: ${download.percent}%`;
+
 
         // Remove the message button and set the progress to false
         if (download.isLast && this.inProgress) {
